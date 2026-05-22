@@ -4,7 +4,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import io
-
+from fastapi.responses import HTMLResponse
 app = FastAPI(title="Plant Disease API")
 
 # السماح لأي تطبيق يتصل بالـ API (مهم للموبايل)
@@ -69,9 +69,10 @@ def preprocess_image(image_bytes: bytes) -> np.ndarray:
     return np.expand_dims(image_array, axis=0)  # إضافة batch dimension
 
 
-@app.get("/")
-def root():
-    return {"message": "Plant Disease API is running ✅"}
+@app.get("/", response_class=HTMLResponse)
+def home():
+    with open("plant_disease_ui.html", "r", encoding="utf-8") as f:
+        return f.read()
 
 
 @app.post("/predict")
