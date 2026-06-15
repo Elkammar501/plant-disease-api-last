@@ -191,21 +191,6 @@ This project can be used as a foundation for:
 
 ---
 
-## Limitations
-
-Although the model can perform well on dataset images, real-world performance may vary depending on:
-
-- Image quality.
-- Lighting conditions.
-- Background complexity.
-- Leaf position and clarity.
-- Similarity between different plant diseases.
-- Diseases not included in the training dataset.
-
-For best results, the system should be tested further using real-world mobile images captured under different conditions.
-
----
-
 ## Future Enhancements
 
 Future improvements may include:
