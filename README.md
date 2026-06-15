@@ -226,11 +226,3 @@ Future improvements may include:
 ## Project Value
 
 This project shows how deep learning can be applied to solve a real agricultural problem. It combines computer vision, transfer learning, and backend deployment into a practical AI solution that can support early plant disease detection and help improve agricultural decision-making.
-
----
-
-## Author
-
-**Abdelrahman Elgammal**
-
-AI and Data Science enthusiast focused on building practical AI-powered solutions, computer vision applications, automation workflows, and intelligent systems.
